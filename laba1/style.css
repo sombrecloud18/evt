@@ -8,6 +8,7 @@
     width: 200px;
     height: 100px;
     border-radius: 5%;
+    object-fit: cover;
 }
 
 .film_link {
@@ -17,6 +18,7 @@
 
 .film_list {
     list-style: none;
+    padding: 0;
 }
 
 .first_film {
