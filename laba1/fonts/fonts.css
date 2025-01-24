@@ -15,3 +15,9 @@
     src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
     font-weight: 400;
 }
+
+@font-face {
+  font-family: 'Myfont';
+  src: url(Myfont-Regular.ttf);
+  font-weight: 400;
+}
