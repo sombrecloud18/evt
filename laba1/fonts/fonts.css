@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    font-weight: 400;
+}

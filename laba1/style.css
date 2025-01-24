@@ -1,0 +1,43 @@
+.body {
+    background-color: #d7c0c0;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.film_pic {
+    width: 200px;
+    height: 100px;
+    border-radius: 5%;
+}
+
+.film_link {
+    text-decoration: none;
+    color: black;
+}
+
+.film_list {
+    list-style: none;
+}
+
+.first_film {
+    text-align: center;
+    font-family: 'Myfont';
+}
+
+.second_film {
+    text-align: justify;
+    font-family: 'Comfortaa';
+}
+
+.third_film {
+    text-align: right;
+    font-family: 'PlayfairDisplay';
+}
+
+.line_first {
+    font-weight: 700;
+}
+
+.line_second {
+    font-weight: bold;
+}
