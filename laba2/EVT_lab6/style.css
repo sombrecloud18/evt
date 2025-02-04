@@ -1,0 +1,236 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+button {
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  animation-name: moving_button;
+  animation-duration: 0.5ms;
+  animation-iteration-count: infinite;
+}
+
+button:hover {
+  animation-play-state: paused;
+  background-color: green;
+}
+
+.link {
+  font-size: 20px;
+  position: relative; 
+  color: black; 
+  text-decoration: none; 
+}
+
+.link:hover {
+  color: green;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px; 
+  width: 0;
+  height: 2px;
+  background-color: green;
+  transition: width 0.3s ease, left 0.3s ease; 
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0; 
+}
+
+@keyframes moving_button {
+  from {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(-2px, -2px);
+  }
+  to {
+      transform: translate(0, 0);
+  }
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+  border-radius: 50%;
+  margin: 30px;
+  animation: falling_ball 2s ease-in-out running;
+}
+
+css
+Copy
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+button {
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+    animation-name: moving_button;
+    animation-duration: 0.5ms; 
+    animation-iteration-count: infinite;
+}
+
+button:hover {
+    animation-play-state: paused;
+    background-color: green;
+}
+
+.link {
+    font-size: 20px;
+    position: relative; 
+    color: black; 
+    text-decoration: none; 
+}
+
+.link:hover {
+    color: green;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: width 0.3s ease, left 0.3s ease; 
+}
+
+.link:hover::after {
+    width: 100%;
+    left: 0; 
+}
+
+@keyframes moving_button {
+    from {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-2px, -2px);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    margin: 30px;
+    animation: falling_ball 5s ease-in-out;
+    animation: falling_ball 5s forwards;
+    transform: translateY(300px)
+}
+
+@keyframes falling_ball {
+    0% {
+      transform: translateY(300px); 
+    }
+    10% {
+      transform: translateY(15px); 
+    }
+    20% {
+      transform: translateY(300px) scaleY(0.9); 
+    }
+    30% {
+      transform: translateY(25px);
+    }
+    35% {
+      transform: translateY(300px) scaleY(0.9); 
+    }
+    40% {
+      transform: translateY(37.5px); 
+    }
+    45% {
+      transform: translateY(300px) scaleY(0.9); 
+    }
+    50% {
+      transform: translateY(50px) scaleY(0.9); 
+    }
+    55% {
+      transform: translateY(300px); 
+    }
+    60% {
+      transform: translateY(75px) scaleY(0.9);
+    }
+    65% {
+      transform: translateY(300px); 
+    }
+    70% {
+      transform: translateY(100px) scaleY(0.9); 
+    }
+    75% {
+      transform: translateY(300px); 
+    }
+    80% {
+      transform: translateY(150px) scaleY(0.9); 
+    }
+    85% {
+      transform: translateY(300px); 
+    }
+    90% {
+      transform: translateY(200px) scaleY(0.9); 
+    }
+    94% {
+      transform: translateY(300px); 
+    }
+    97% {
+      transform: translateY(250px) scaleY(0.9); 
+    }
+    100% {
+      transform: translateY(300px); 
+    }
+}
+
