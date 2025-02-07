@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    border: 2px solid #cd95b5;
+    padding: 5px;
+}
+
+.element {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    width: 40%;
+}
+
+.el {
+    text-align: center;
+    height: 100%;
+    width: 300px;
+}
+
+.element_one {
+    background-color: darksalmon;
+}
+
+.element_two {
+    background-color: rgb(159, 197, 228);
+}
+
+.element_three {
+    background-color: #d5ebaa;
+}
+
+.element_four {
+    background-color: rgb(137, 212, 146);
+}
+
+button {
+    margin-top: 10px;
+    background-color: #e895bd;
+    border: 2px solid #b85c88;
+}
+
+.container_two {
+    display: flex;
+}
+
+.container_three {
+    display: flex;
+}
