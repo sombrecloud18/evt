@@ -5,6 +5,11 @@
 ## Контактные данные
 - +375(33)344-67-35
 - billykatessss@gmail.com
+<div id="badges">
+  <a href="https://www.linkedin.com/in/%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B8%D0%BB%D0%B8%D0%B4%D0%B0-7189b8332/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
 
 ## О себе
 Я обучаюсь на 2 курсе Белорусского государственного университета информатики и радоэлектроники. На данный момент среди основных **целей**: 
