@@ -13,6 +13,7 @@
     <img src="https://img.shields.io/badge/Instagram-red?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
   </a>
 </div>
+<img src="https://komarev.com/ghpvc/?username=sombrecloud18&style=flat-square&color=blue" alt=""/>
 
 ## О себе
 Я обучаюсь на 2 курсе Белорусского государственного университета информатики и радоэлектроники. На данный момент среди основных **целей**: 
