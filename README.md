@@ -17,18 +17,20 @@
 
 ## :woman_technologist: О себе:
 Я обучаюсь на 2 курсе Белорусского государственного университета информатики и радоэлектроники. Очень сильно начинающий фронтенд-разработчик<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">. На данный момент среди основных **целей**: 
-* получение высшего образования;
-* улучшение необходимых для будущей работы хард- и софт- навыков; 
-* налаживание социальных связей.
+* :zap: получение высшего образования;
+* :zap: улучшение необходимых для будущей работы хард- и софт- навыков; 
+* :zap: налаживание социальных связей.
 *****
 Я *целеустремленная*, *стрессоустойчивая* (был опыт работы в стрессовых условиях), *быстро усваиваю информацию* и всегда стараюсь *довести дело до конца*.
 
-## Навыки
-+ :zap: HTML
-+ :zap: CSS
-+ :zap: JavaScript
-+ :zap: Git
-+ :zap: БЭМ-методология
+## :hammer_and_wrench: Навыки
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+</div>
 
 ## Пример кода
 ```
