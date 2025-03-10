@@ -40,7 +40,7 @@ function bubbleSort(arr) {
     return arr; 
 }
 ```
-[Еще примеры работы]([(https://sombrecloud18.github.io/evt/] "Работы")
+[Работы][https://sombrecloud18.github.io/evt/]
 
 ## Опыт работы
 | Должность                     | Время работы             |
