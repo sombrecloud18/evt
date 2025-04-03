@@ -1,0 +1,138 @@
+.header, 
+.footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: #efacef;
+    font-size: 30px;
+    padding-block: 5px;
+}
+
+.header {
+    top: 0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.wrapper:has(.main) {
+    display: flex;
+    max-width: none;
+    width: 100%;
+}
+
+article.article p, .article:has(p) {
+    font-style: normal !important; 
+}
+
+blockquote.blockquote {
+    font-style: italic !important;
+}
+
+body {
+    text-align: center;
+}
+
+.article .word {
+    position: relative; 
+    top: 0; 
+}
+
+.word {
+    width: min-content;
+    text-align: left;
+    position: sticky;
+    top: 45px; 
+    left: 10px; 
+    padding: 5px;
+    color: white; 
+}
+
+.word.first {
+    background-color: #e7b0b0;
+}
+
+.word.second {
+    background-color: #afd7af; 
+    left: 68px;
+}
+
+.word.third {
+    background-color: #9b9be5; 
+    left: 89px;
+}
+
+.word.fourth {
+    background-color: #909061; 
+    left: 134px;
+}
+
+.word.fifth {
+    background-color: #be91be; 
+    left: 204px;
+}
+
+.article.first p:nth-child(6)::first-letter {
+    font-size: xx-large; 
+    color: #241e59;
+}
+
+.article.second p:nth-child(5)::first-letter {
+    font-size: xx-large; 
+    color: #43293e;
+}
+
+.article.third p:nth-child(5)::first-letter {
+    font-size: xx-large; 
+    color: #243d4b;
+}
+
+.article.fourth p:nth-child(5)::first-letter {
+    font-size: xx-large; 
+    color: #304825;
+}
+
+.article.fifth p:nth-child(7)::first-letter {
+    font-size: xx-large; 
+    color: #525838;
+}
+
+.article.first img {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.article.article.second img {
+    width: 120px;
+    height: auto;
+    float: right;
+}
+
+.article.third img {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.article.fourth img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+.article.fifth img {
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+.footer a {
+    text-decoration: underline !important;
+    color: initial !important;
+}
+
+.footer a:hover {
+    cursor: default;
+}
