@@ -1,0 +1,85 @@
+.construction {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-top: 10px solid #333;
+}
+
+.pendulum {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 300px;
+    transform-origin: top center;
+}
+
+.pendulum:nth-child(1) { 
+    left: 0; 
+}
+.pendulum:nth-child(2) { 
+    left: 100px; 
+}
+.pendulum:nth-child(3) { 
+    left: 200px; 
+}
+.pendulum:nth-child(4) {
+    left: 300px; 
+}
+.pendulum:nth-child(5) { 
+    left: 400px; 
+}
+
+.pendulum::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 200px;
+    background: #333;
+    transform: translateX(-50%);
+}
+
+.ball {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: #333;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.pendulum:first-child {
+    animation: swing-left 2s ease-in-out infinite;
+}
+
+.pendulum:last-child {
+    animation: swing-right 2s 1s ease-in-out infinite;
+}
+
+@keyframes swing-left {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    25% { 
+        transform: rotate(30deg); 
+    }
+    75%, 100% { 
+        transform: rotate(0deg); 
+    }
+}
+
+@keyframes swing-right {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    25% { 
+        transform: rotate(-30deg); 
+    }
+    75%, 100% { 
+        transform: rotate(0deg); 
+    }
+}
