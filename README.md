@@ -71,3 +71,5 @@ function bubbleSort(arr) {
   <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2Q0aWUwcWQ0Z2l0NDNoOGNnd2xpenN4OXoyZW5pMTB3NGUybmh3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dYQj1vh5n7nqygIU2f/giphy.gif" width="300"/>
 </div>
 
+## Курсовой проект 
+
