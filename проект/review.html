@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оно тебе надо</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+          <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип проекта черный."
+        />
+      </a>
+      <button class="theme-toggle" id="theme-toggle">
+        <img src="./images/sun.svg" alt="Светлая тема" class="theme-icon sun">
+        <img src="./images/moon.svg" alt="Темная тема" class="theme-icon moon">
+      </button>
+      <button class="burger-menu" id="burger-menu" aria-label="Меню">
+        <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+          <path class="burger-line top-line" d="M 0 9 L 0 11 L 50 11 L 50 9 Z"/>
+          <path class="burger-line middle-line" d="M 0 24 L 0 26 L 50 26 L 50 24 Z"/>
+          <path class="burger-line bottom-line" d="M 0 39 L 0 41 L 50 41 L 50 39 Z"/>
+        </svg>
+      </button>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item header__links-list-item_no-bullit">
+            <a class="header__menu-link" href="./index.html">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link_active" href="./review.html">Посмотреть рецензии</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="./write_review.html">Написать рецензию</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="lots">
+          <div class="review_header">
+          <h2 class="lots__heading">Рецензии</h2>
+          <form class="review_find" action="" method="get">
+            <input class="input" name="s" placeholder="Норвежский лес" type="search">
+          </form>
+          </div>
+          <ul class="lots__card-list">
+            <li class="lots__card-list-item card_type_book norwegian"
+            data-book-cover="norwegian-wood.jpg">
+              <div class="overlay"></div>
+              <a class="card-link" href="#0" 
+                 data-book-id="1" 
+                 data-book-title="Норвежский лес" 
+                 data-book-author="Харуки Мураками"
+                 data-review-rating="4"
+                 data-reviewer="Алексей Петров"
+                 data-review-date="15.05.2023"
+                 data-review-text="Потрясающий роман о любви и потере. Мураками мастерски передает атмосферу 60-х и внутренний мир главного героя. Читается на одном дыхании, хотя некоторые моменты могут показаться слишком меланхоличными.">
+                <article class="card">
+                  <h3 class="card__title">
+                    Норвежский лес
+                  </h3>
+                  <p class="card__text">
+                    Роман о любви, потере и взрослении, действие которого происходит в Токио в конце 1960-х годов. Главный герой, Тору Ватанабэ, вспоминает свою юность и отношения с двумя девушками - Наоко и Мидори.
+                  </p>
+                </article>
+              </a>
+            </li>
+            <li class="lots__card-list-item card_type_book master"
+            data-book-cover="master-margarita.jpg">
+              <div class="overlay"></div>
+              <a class="card-link" href="#0" 
+                 data-book-id="2" 
+                 data-book-title="Мастер и Маргарита" 
+                 data-book-author="Михаил Булгаков"
+                 data-review-rating="5"
+                 data-reviewer="Мария Иванова"
+                 data-review-date="22.04.2023"
+                 data-review-text="Шедевр мировой литературы! Булгаков создал уникальное произведение, где переплетаются реальность и мистика, сатира и философия. Особенно впечатлили главы о Понтии Пилате - настолько глубокие и психологически точные. Рекомендую всем, кто любит многослойные тексты.">
+                <article class="card">
+                  <h3 class="card__title">
+                    Мастер и Маргарита
+                  </h3>
+                  <p class="card__text">
+                    Фантасмагорический роман, сочетающий сатиру, фантастику и философскую притчу. В произведении переплетаются две сюжетные линии: история визита дьявола в Москву 1930-х годов и роман о Понтии Пилате.
+                  </p>
+                </article>
+              </a>
+            </li>
+            <li class="lots__card-list-item card_type_book antiut"
+            data-book-cover="1984.jpg">
+              <div class="overlay"></div>
+              <a class="card-link" href="#0" 
+                 data-book-id="3" 
+                 data-book-title="1984" 
+                 data-book-author="Джордж Оруэлл"
+                 data-review-rating="5"
+                 data-reviewer="Дмитрий Смирнов"
+                 data-review-date="10.03.2023"
+                 data-review-text="Пугающе актуальная антиутопия. Оруэлл предсказал многие механизмы контроля, которые используются в современном мире. Особенно впечатляет концепция 'двоемыслия' и 'новояза'. Книга заставляет задуматься о ценности свободы и правды. Обязательна к прочтению в наше время!">
+                <article class="card">
+                  <h3 class="card__title">
+                    1984
+                  </h3>
+                  <p class="card__text">
+                    Антиутопический роман о тоталитарном обществе, где правит Большой Брат. Главный герой, Уинстон Смит, работает в Министерстве правды и начинает сомневаться в системе, что приводит к трагическим последствиям.
+                  </p>
+                </article>
+              </a>
+            </li>
+            <li class="lots__card-list-item card_type_book crime"
+            data-book-cover="crime-punishment.jpg">
+              <div class="overlay"></div>
+              <a class="card-link" href="#0" 
+                 data-book-id="4" 
+                 data-book-title="Преступление и наказание" 
+                 data-book-author="Фёдор Достоевский"
+                 data-review-rating="4"
+                 data-reviewer="Елена Козлова"
+                 data-review-date="05.02.2023"
+                 data-review-text="Глубочайший психологический анализ преступления и его последствий. Достоевский мастерски показывает внутреннюю борьбу Раскольникова, его муки совести и путь к искуплению. Некоторые диалоги могут показаться затянутыми, но это лишь усиливает реалистичность произведения. Великая книга!">
+                <article class="card">
+                  <h3 class="card__title">
+                    Преступление и наказание
+                  </h3>
+                  <p class="card__text">
+                    Психологический роман о студенте Раскольникове, совершившем убийство старухи-процентщицы. Произведение исследует темы морали, раскаяния и искупления через внутреннюю борьбу главного героя.
+                  </p>
+                </article>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+  
+      <!-- Модальное окно для просмотра рецензии -->
+      <div id="reviewModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="review-modal__header">
+            <img id="modalBookCover" class="review-modal__cover" src="./images/norwegian-wood.jpg" alt="Обложка книги">
+            <div class="review-modal__info">
+              <h2 id="modalBookTitle" class="review-modal__title"></h2>
+              <p id="modalBookAuthor" class="review-modal__author"></p>
+              <div class="review-modal__rating">
+                <p>Оценка:</p>
+                <div id="modalRatingStars" class="rating-stars">
+                </div>
+              </div>
+              <p id="modalReviewer" class="review-modal__reviewer"></p>
+            </div>
+          </div>
+          <div id="modalReviewText" class="review-modal__text"></div>
+        </div>
+      </div>
+    <footer class="footer">
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer-link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer-link footer__menu-link_active" href="./review.html">Посмотреть рецензии</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer-link" href="./write_review.html">Написать рецензию</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/yt.svg"
+              alt="Иконка YouTube"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="https://vk.com/panhck?from=groups" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/vk.svg"
+              alt="Иконка ВК"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="https://pin.it/1iRF61DCm" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/pinterest.svg"
+              alt="Иконка Pinterest"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

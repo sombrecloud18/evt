@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оно тебе надо</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип проекта черный."
+        />
+      </a>
+      <button class="theme-toggle" id="theme-toggle">
+        <img src="./images/sun.svg" alt="Светлая тема" class="theme-icon sun">
+        <img src="./images/moon.svg" alt="Темная тема" class="theme-icon moon">
+      </button>
+      <button class="burger-menu" id="burger-menu" aria-label="Меню">
+        <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+          <path class="burger-line top-line" d="M 0 9 L 0 11 L 50 11 L 50 9 Z"/>
+          <path class="burger-line middle-line" d="M 0 24 L 0 26 L 50 26 L 50 24 Z"/>
+          <path class="burger-line bottom-line" d="M 0 39 L 0 41 L 50 41 L 50 39 Z"/>
+        </svg>
+      </button>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item header__links-list-item_no-bullit">
+            <a href="./index.html" class="header__menu-link">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="./review.html">Посмотреть рецензии</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link_active" href="./write_review.html">Написать рецензию</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="review_header">
+        <h2 class="lots__heading">Написать рецензию</h2>
+        <form class="review_find" action="" method="get" id="search-form">
+          <input class="input" name="s" placeholder="Норвежский лес" type="search" id="book-search">
+        </form>
+      </div>
+      
+      <div class="search-results" id="search-results">
+        <div class="book-item" data-book-id="1">
+          <img src="./images/norwegian-wood.jpg" alt="Норвежский лес" class="book-cover">
+          <div class="book-info">
+            <div class="book-title">Норвежский лес</div>
+            <div class="book-author">Харуки Мураками</div>
+            <div class="book-description">Роман о любви, потере и взрослении, действие которого происходит в Токио в конце 1960-х годов. Главный герой, Тору Ватанабэ, вспоминает свою юность и отношения с двумя девушками - Наоко и Мидори.</div>
+          </div>
+        </div>
+        
+        <div class="book-item" data-book-id="2">
+          <img src="./images/master-margarita.jpg" alt="Мастер и Маргарита" class="book-cover">
+          <div class="book-info">
+            <div class="book-title">Мастер и Маргарита</div>
+            <div class="book-author">Михаил Булгаков</div>
+            <div class="book-description">Фантасмагорический роман, сочетающий сатиру, фантастику и философскую притчу. В произведении переплетаются две сюжетные линии: история визита дьявола в Москву 1930-х годов и роман о Понтии Пилате.</div>
+          </div>
+        </div>
+        
+        <div class="book-item" data-book-id="3">
+          <img src="./images/1984.jpg" alt="1984" class="book-cover">
+          <div class="book-info">
+            <div class="book-title">1984</div>
+            <div class="book-author">Джордж Оруэлл</div>
+            <div class="book-description">Антиутопический роман о тоталитарном обществе, где правит Большой Брат. Главный герой, Уинстон Смит, работает в Министерстве правды и начинает сомневаться в системе, что приводит к трагическим последствиям.</div>
+          </div>
+        </div>
+        
+        <div class="book-item" data-book-id="4">
+          <img src="./images/crime-punishment.jpg" alt="Преступление и наказание" class="book-cover">
+          <div class="book-info">
+            <div class="book-title">Преступление и наказание</div>
+            <div class="book-author">Фёдор Достоевский</div>
+            <div class="book-description">Психологический роман о студенте Раскольникове, совершившем убийство старухи-процентщицы. Произведение исследует темы морали, раскаяния и искупления через внутреннюю борьбу главного героя.</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="no-results" id="no-results">
+        Книга не найдена. Попробуйте изменить запрос.
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer-link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer-link" href="./review.html">Посмотреть рецензии</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer-link footer__menu-link_active" href="./write_review.html">Написать рецензию</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/yt.svg"
+              alt="Иконка YouTube"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="https://vk.com/panhck?from=groups" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/vk.svg"
+              alt="Иконка ВК"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="https://pin.it/1iRF61DCm" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/pinterest.svg"
+              alt="Иконка Pinterest"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

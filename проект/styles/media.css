@@ -1,0 +1,331 @@
+@media (max-width: 768px) {
+  .page {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header {
+    padding: 40px 20px 30px;
+    gap: 80px;
+  }
+  
+  .header__menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--background-color);
+    z-index: 1000;
+    padding: 100px 20px 20px;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+.header__menu-item {
+    border-top: 2px solid var(--font-color);
+    padding-block: 12px;
+    margin: 0;
+}
+
+.header__menu-item:last-of-type {
+  border-bottom: 2px solid var(--font-color);
+}
+
+  .header__menu.active {
+    display: block;
+    right: 0;
+  }
+  
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 88px;
+    right: 40px;
+    z-index: 1001;
+    padding: 0;
+  }
+  
+  .burger-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .burger-line {
+    fill: var(--font-color);
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+  
+  .burger-menu.active .burger-icon {
+    transform: rotate(180deg);
+  }
+  
+  .burger-menu.active .top-line {
+    transform: translateY(11px) rotate(45deg);
+  }
+  
+  .burger-menu.active .middle-line {
+    opacity: 0;
+  }
+  
+  .burger-menu.active .bottom-line {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
+  .header__menu-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  body.menu-open {
+    overflow: hidden;
+  }
+  
+  .cover {
+    min-height: 400px;
+    padding: 80px 20px 20px;
+  }
+  
+  .cover__title {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 60px;
+  }
+  
+  .cover__description {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .button {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .footer {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .footer__social-list {
+    gap: 30px;
+  }
+  
+  .lots__heading {
+    margin-left: 0;
+    padding-left: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: none;
+    font-size: 32px;
+  }
+  
+  .review_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .review_find {
+    width: calc(100% - 40px);
+    max-width: none;
+    margin-bottom: 20px;
+  }
+  
+  .review_find input {
+    width: 100%;
+    max-width: none;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  .review_find input::placeholder {
+    font-size: 18px;
+  }
+  
+  .lots__card-list-item {
+    width: 100%;
+    max-width: 400px;
+    min-height: 450px;
+  }
+  
+  .card__title {
+    margin: 30px 20px auto 20px;
+    font-size: 20px;
+  }
+  
+  .card__text {
+    margin: auto 20px 30px 20px;
+    font-size: 18px;
+  }
+  
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+    padding: 20px;
+  }
+  
+  .review-modal__header {
+    flex-direction: column;
+  }
+  
+  .review-modal__cover {
+    width: 100px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .review-modal__title {
+    font-size: 20px;
+  }
+  
+  .review-modal__author {
+    font-size: 16px;
+  }
+  
+  .book-item {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .book-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book-cover {
+    margin: 0;
+    max-height: fit-content;
+  }
+  
+  .book-title {
+    font-size: 20px;
+  }
+  
+  .book-author {
+    font-size: 16px;
+  }
+  
+  .book-description {
+    font-size: 14px;
+  }
+  
+  .no-results {
+    padding: 30px 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__logo-image {
+    width: 100px;
+    height: auto;
+  }
+  
+  .cover__title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .text__description {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .lots__heading {
+    margin-left: 0;
+    padding-left: 15px;
+    font-size: 28px;
+  }
+  
+  .review_header {
+    padding-left: 15px;
+  }
+  
+  .review_find {
+    width: calc(100% - 30px);
+  }
+  
+  .review_find input {
+    font-size: 16px;
+  }
+  
+  .review_find input::placeholder {
+    font-size: 16px;
+  }
+  
+  .footer__menu-list {
+    font-size: 16px;
+  }
+  
+  .footer__social-icon {
+    width: 36px;
+  }
+  
+  .autorization-text {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 30% auto;
+    padding: 15px;
+  }
+  
+  .review-modal__title {
+    font-size: 18px;
+  }
+  
+  .book-title {
+    font-size: 18px;
+  }
+  
+  .book-author {
+    font-size: 14px;
+  }
+  
+  .book-description {
+    font-size: 13px;
+  }
+  
+  .no-results {
+    font-size: 16px;
+  }
+}
